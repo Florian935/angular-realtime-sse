@@ -5,6 +5,13 @@ h1 {
     font-weight: 900;
 }
 
+.canvas-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+
 .container-stream {
     font-size: 1.2em;
     border: solid 1px black;

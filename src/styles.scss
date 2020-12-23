@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: consolas;
+}
+
+.smoothie-chart-tooltip {
+    background: black;
+    padding: 1em;
+    margin-top: 20px;
+    color: white;
+    font-size: 12px;
+    pointer-events: none;
+  }
+
+

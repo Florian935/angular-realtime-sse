@@ -1,13 +1,16 @@
+import { CommonModule } from '@angular/common';
 import { SupplierTransactionService } from './service/http/supplier-transaction.service';
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 
 
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule
+      CommonModule
+  ],
+  exports: [
+      CommonModule
   ],
   providers: [
     SupplierTransactionService

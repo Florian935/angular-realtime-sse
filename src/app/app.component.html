@@ -1,15 +1,1 @@
-<h1>Welcome on Supplier Transaction Stream !</h1>
-
-<div class="canvas-container">
-    <canvas #canvas width="800" height="200"></canvas>
-</div>
-
-<div class="container-stream" *ngFor="let supplierTransaction of supplierTransactionEvents">
-    <div><span>Supplier n°:</span> {{ supplierTransaction.supplierCounter }}</div>
-    <div><span>Username:</span> {{ supplierTransaction.username }}</div>
-    <div><span>Price:</span> {{ supplierTransaction.price | currencyCustom:'€' }}</div>
-    <div>
-        <span>Emitted date time:</span>
-        {{ supplierTransaction.instant | date:'dd/MM/yyyy, H:mm:ss' }}
-    </div>
-</div>
+<router-outlet></router-outlet>

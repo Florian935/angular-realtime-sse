@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.container-stream {
+    font-size: 1.2em;
+    border: solid 1px black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px;
+    margin: 7px;
+    text-align: center;
+    width: auto;
+
+    span {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}

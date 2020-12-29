@@ -10,7 +10,7 @@ import { SupplierTransactionEvent } from '../../model/supplier-transaction-event
 })
 export class HomeComponent implements OnInit {
 
-    public constructor(private _supplierTransactionService: SupplierTransactionService) { }
+    public constructor() { }
 
     ngOnInit(): void { }
 }

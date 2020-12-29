@@ -1,17 +1,17 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { SupplierTransactionService } from '../core/service/http/supplier-transaction.service';
-import { SupplierTransactionEvent } from '../model/supplier-transaction-event.model';
+import { SupplierTransactionService } from '../../core/service/http/supplier-transaction.service';
+import { SupplierTransactionEvent } from '../../model/supplier-transaction-event.model';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-transaction',
+  templateUrl: './transaction.component.html',
+  styleUrls: ['./transaction.component.scss']
 })
-export class HomeComponent implements OnInit, OnDestroy {
+export class TransactionComponent implements OnInit, OnDestroy {
 
-    supplierTransactionEvents: Array<SupplierTransactionEvent>;
     private supplierTransactionSubscriber$ = new Subscription();
+    supplierTransactionEvents: Array<SupplierTransactionEvent>;
 
     public constructor(private _supplierTransactionService: SupplierTransactionService) { }
 
@@ -26,5 +26,4 @@ export class HomeComponent implements OnInit, OnDestroy {
     ngOnDestroy(): void {
         this.supplierTransactionSubscriber$.unsubscribe();
     }
-
 }

@@ -4,7 +4,11 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
     {
         path: 'home',
-        loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
+        loadChildren: () => import('./page/home/home.module').then(m => m.HomeModule)
+    },
+    {
+        path: 'stream',
+        loadChildren: () => import('./page/transaction/transaction.module').then(m => m.TransactionModule)
     },
     {
         path: '**', redirectTo: 'home'
